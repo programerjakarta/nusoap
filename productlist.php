@@ -14,7 +14,6 @@ function getProd($category) {
 }
  
 $server = new soap_server();
-// $server->configureWSDL('demo', 'urn:demo');
 $server->configureWSDL("productlist", "http://localhost/soapwebservice/productlist");
  
 $server->register("getProd",

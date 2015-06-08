@@ -1,9 +1,7 @@
 <?php
 require_once "lib/nusoap.php";
  
-// $client = new nusoap_client("food.wsdl", true);
 $client = new nusoap_client("http://localhost/soapwebservice/food.php?wsdl", true);
-// $client = new nusoap_client("http://localhost/soapwebservice/foodservice#getFood", true);
 $error  = $client->getError();
  
 if ($error) {
