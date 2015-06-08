@@ -1,6 +1,6 @@
 <?php
 require_once "lib/nusoap.php";
-$client = new nusoap_client("http://localhost/soapwebservice/productlist.php");
+$client = new nusoap_client("http://localhost/soapwebservice/productlist.php?wsdl", true);
  
 $error = $client->getError();
 if ($error) {
